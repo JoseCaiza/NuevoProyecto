@@ -1,11 +1,11 @@
 version: '2'
 services:
- web:
-   image: default_apache
+ jose:
+   image: .
  lb:
    image: dockercloud/haproxy
    links:
-    - web
+    - jose
    ports:
     - '80:80'
    volumes:
