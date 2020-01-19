@@ -1,7 +1,7 @@
 version: '2'
 services:
  jose:
-   image: .
+   build: .
  lb:
    image: dockercloud/haproxy
    links:
